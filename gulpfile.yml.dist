@@ -1,0 +1,80 @@
+theme:
+  name: "default theme"
+  description: "The default theme for customer backend"
+
+url: 'http://localhost'
+
+supported_browser:
+  - 'Chrome >= 35'
+  - 'Firefox >= 38'
+  - 'Edge >= 12'
+  - 'Explorer >= 10'
+  - 'iOS >= 8'
+  - 'Safari >= 8'
+  - 'Android 2.3'
+  - 'Android >= 4'
+  - 'Opera >= 12'
+
+fonts:
+  src: './res/fonts/'
+  dest: './fonts'
+
+images:
+  src: './res/img'
+  dest: './img'
+  optimization:
+    svg:
+      cleanupIDs: false
+      removeViewBox: false
+      removeUselessStrokeAndFill: false
+      removeXMLProcInst: false
+
+icons:
+  normal:
+    src: './res/icons/normal'
+    dest: './icons'
+  colorize:
+    src: './res/icons/colorize'
+    dest: './icons'
+    colors:
+      black: '#000'
+      white: '#fff'
+      primary: '#736b55'
+      secondary: '#f1ead3'
+      success: '#28a745'
+      info: '#17a2b8'
+      warning: '#ffc107'
+      danger: '#dc3545'
+      light: '#f8f9fa'
+      dark: '#343a40'
+      action: '#c3731e'
+      action_hover: '#772700'
+  png:
+    src: './res/icons/png'
+    dest: './icons'
+  optimization:
+    svg:
+      cleanupIDs: false
+      removeViewBox: false
+      removeUselessStrokeAndFill: false
+      removeXMLProcInst: false
+stylesheets:
+  sass:
+    src: './res/scss'
+    options:
+      outputStyle: 'expanded'
+      precision: 10
+  css:
+    dest: './css'
+js:
+  src: './res/js'
+  dest: './js'
+vendors:
+  bootstrap: true
+  jquery: true
+  mdbootstrap: true
+  popper: true
+
+visualRegressionTest:
+    user: 'guest'
+    scenario: 'all'

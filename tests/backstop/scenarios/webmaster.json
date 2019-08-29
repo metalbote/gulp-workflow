@@ -1,0 +1,51 @@
+{
+  "scenarios": [
+    {
+      "label": "Home",
+      "url": "{url}/"
+    },
+    {
+      "label": "Home - Manage button",
+      "url": "{url}/",
+      "clickSelector": "#toolbar-item-administration",
+      "selectors": [
+        "viewport"
+      ],
+      "viewports": [
+        {
+          "label": "phone ",
+          "width": 320,
+          "height": 480
+        }
+      ]
+    },
+    {
+      "label": "Home - Edit button",
+      "url": "{url}/",
+      "clickSelector": ".toolbar-icon-edit",
+      "selectors": [
+        "viewport"
+      ]
+    },
+    {
+      "label": "Home - Jump To button",
+      "url": "{url}/",
+      "clickSelector": ".toolbar-icon-help",
+      "selectors": [
+        "viewport"
+      ]
+    },
+    {
+      "label": "dashboard",
+      "url": "{url}/admin/dashboard"
+    },
+    {
+      "label": "content/files",
+      "url": "{url}/admin/content/files"
+    },
+    {
+      "label": "content/media",
+      "url": "{url}/admin/content/media"
+    }
+  ]
+}

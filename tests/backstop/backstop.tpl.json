@@ -1,0 +1,69 @@
+{
+  "viewports": [
+    {
+      "label": "Phone",
+      "width": 320,
+      "height": 480,
+      "deviceScaleFactor": 2,
+      "pageScaleFactor": 1,
+      "mobile": true
+    },
+    {
+      "label": "Tablet Vertical",
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "label": "Tablet",
+      "width": 1024,
+      "height": 768
+    },
+    {
+      "label": "Desktop",
+      "width": 1280,
+      "height": 768
+    },
+    {
+      "label": "Desktop+",
+      "width": 1400,
+      "height": 900
+    },
+    {
+      "label": "HD",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "label": "HD+",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "label": "UHD",
+      "width": 3840,
+      "height": 2160
+    }
+  ],
+  "onBeforeScript": "onBefore.js",
+  "onReadyScript": "onReady.js",
+  "paths": {
+    "bitmaps_reference": "./tests/backstop/screenshots/{group}/reference",
+    "bitmaps_test": "./tests/backstop/screenshots/{group}/test",
+    "engine_scripts": "./tests/backstop/engine_scripts/puppet",
+    "html_report": "./tests/backstop/html_report/{group}",
+    "ci_report": "./tests/backstop/ci_report/{group}"
+  },
+  "engine": "puppeteer",
+  "engineOptions": {
+    "ignoreHTTPSErrors": false,
+    "args": [
+      "--no-sandbox"
+    ],
+    "waitTimeout": 120000
+  },
+  "report": ["CLI", "browser"],
+  "asyncCaptureLimit": 2,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": false
+}
